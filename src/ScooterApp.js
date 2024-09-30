@@ -107,4 +107,4 @@ class ScooterApp {
 // console.log(s1)
 // console.log(u1)
 
-// module.exports = ScooterApp
+module.exports = ScooterApp

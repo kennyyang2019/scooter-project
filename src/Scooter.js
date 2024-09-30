@@ -26,31 +26,28 @@ class Scooter {
 		this.user = null;
 	}
 
-	recharge() { 
+	recharge() {
 		let id = setInterval(() => {
 			this.charge += 25;
 			if (this.charge >= 100) {
 				this.charge = 100;
-        console.log(`Charged to ${this.charge}%`)
-        clearInterval(id);
-			}
-      else console.log(`Charged to ${this.charge}%`);
+				console.log(`Charged to ${this.charge}%`);
+				clearInterval(id);
+			} else console.log(`Charged to ${this.charge}%`);
 		}, 2000);
 	}
 
-  requestRepair() {
-    console.log("Repairing......")
-    setTimeout(() =>{
-      this.isBroken = false;
-      console.log("Repair Completed!")
-    },5000)
-  }
+	requestRepair() {
+		console.log("Repairing......");
+		setTimeout(() => {
+			this.isBroken = false;
+			console.log("Repair Completed!");
+		}, 5000);
+	}
 }
-
-
 
 // let s1 = new Scooter();
 // s1.isBroken = true;
 // s1.requestRepair();
 
-module.exports = Scooter
+module.exports = Scooter;
